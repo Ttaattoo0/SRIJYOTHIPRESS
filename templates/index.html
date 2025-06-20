@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sri Jyothi Press - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Sri Jyothi Press</div>
+    <nav>
+      <ul>
+        <li><a href="/templates/index.html" class="active">Home</a></li>
+        <li><a href="/templates/about.html">About</a></li>
+        <li><a href="/templates/services.html">Services</a></li>
+        <li><a href="/templates/gallery.html">Gallery</a></li>
+        <li><a href="/templates/quote.html">Quote</a></li>
+        <li><a href="/templates/contact.html">Contact</a></li>
+        <li>
+          <select id="langSwitcher" onchange="switchLang(this.value)">
+            <option value="en">English</option>
+            <option value="ta">தமிழ்</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>We Print. We Deliver. We Impress.</h1>
+      <p>Box & Calendar printing for every business need in Tamil Nadu and beyond.</p>
+      <a href="/templates/quote.html" class="btn">Get a Quote</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sri Jyothi Press. All rights reserved.</p>
+  </footer>
+</body>
+</html>

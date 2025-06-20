@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="page">
+  <h1>Contact Us</h1>
+  <form action="/contact" method="post">
+    <label>Name</label>
+    <input type="text" name="name" required>
+    <label>Email</label>
+    <input type="email" name="email" required>
+    <label>Message</label>
+    <textarea name="message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+  <p>📞 Phone: +91-XXXXXXXXXX</p>
+  <p>📧 Email: info@srijyothipress.in</p>
+  <p>📍 Address: Sivakasi, Tamil Nadu, India</p>
+</section>
+{% endblock %}

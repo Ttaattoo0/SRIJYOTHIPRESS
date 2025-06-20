@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="page">
+  <h1>Gallery</h1>
+  <p>Here are some of our past works:</p>
+  <div class="gallery">
+    <img src="{{ url_for('static', filename='images/sample1.jpg') }}" alt="Box Sample">
+    <img src="{{ url_for('static', filename='images/sample2.jpg') }}" alt="Calendar Sample">
+    <!-- Add more images here -->
+  </div>
+</section>
+{% endblock %}

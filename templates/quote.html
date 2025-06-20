@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="page">
+  <h1>Request a Quote</h1>
+  <form action="/quote" method="post">
+    <label>Full Name</label>
+    <input type="text" name="name" required>
+    <label>Email Address</label>
+    <input type="email" name="email" required>
+    <label>Phone Number</label>
+    <input type="tel" name="phone" required>
+    <label>What do you need printed?</label>
+    <textarea name="details" required></textarea>
+    <button type="submit" class="btn">Submit</button>
+  </form>
+</section>
+{% endblock %}

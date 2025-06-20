@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sri Jyothi Press</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Sri Jyothi Press</div>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}" class="{{ 'active' if page == 'home' else '' }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}" class="{{ 'active' if page == 'about' else '' }}">About</a></li>
+        <li><a href="{{ url_for('services') }}" class="{{ 'active' if page == 'services' else '' }}">Services</a></li>
+        <li><a href="{{ url_for('gallery') }}" class="{{ 'active' if page == 'gallery' else '' }}">Gallery</a></li>
+        <li><a href="{{ url_for('quote') }}" class="{{ 'active' if page == 'quote' else '' }}">Quote</a></li>
+        <li><a href="{{ url_for('contact') }}" class="{{ 'active' if page == 'contact' else '' }}">Contact</a></li>
+        <li>
+          <select id="langSwitcher" onchange="switchLang(this.value)">
+            <option value="en">English</option>
+            <option value="ta">தமிழ்</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <p>© 2025 Sri Jyothi Press. All rights reserved.</p>
+  </footer>
+</body>
+</html>
